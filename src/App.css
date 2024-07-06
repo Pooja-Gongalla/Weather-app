@@ -75,7 +75,7 @@ body{
       font-weight: 500;
       margin-top: 0px;
       margin-bottom: 20px;
-
+    
 }
 .weather-info
 {
@@ -87,8 +87,7 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-  
-
+   
 }
 .column
 {
@@ -97,4 +96,12 @@ body{
     line-height: 1px;
      display: flex;
     flex-direction: column; /* Stack items vertically */
+}
+.sunny-background
+{
+    background-color: yellow;
+}
+.weather-condition
+{
+    font-weight: bold;
 }

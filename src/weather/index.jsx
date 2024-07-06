@@ -4,6 +4,7 @@ export default function Weather() {
   const [search, setSearch] = useState('');
   const [loading, setLoading] = useState(false);
   const [weatherData, setWeatherData] = useState(null);
+  const [weatherCondition, setWeatherCondition] = useState('');
   async function fetchWeatherData(param) {
     setLoading(true);
     try {
@@ -37,6 +38,17 @@ export default function Weather() {
     fetchWeatherData('bangalore'); //everytime it fetch the data based on bangalore city
   }, []);
   console.log(weatherData);  //data will show in console everytime getting data based on bangalore
+  useEffect(() => {
+    if (weatherData?.main?.temp) {
+      const tempCelsius = weatherData.main.temp - 273.15;
+      console.log(`Temperature: ${tempCelsius.toFixed(2)} °C`);
+      if (tempCelsius > 30) {
+        // Add sunny background class to body
+      } else {
+         // Remove sunny background class from body
+      }
+    }
+  }, [weatherData]);
   return (
     <div>
       <Search
@@ -58,10 +70,17 @@ export default function Weather() {
             <div className='date'>
               <span>{getCurrentDate()}</span>
             </div>
-            <div className='temp'>{weatherData?.main?.temp} </div>
-            <p className='description'>
+            <div className='temp'>{(weatherData?.main?.temp - 273.15).toFixed(2)} °C</div>
+            <div className='weather-condition'>
+              {weatherCondition === 'sunny' ? (
+                <p className='description'>{weatherData && weatherData.weather && weatherData.weather[0] ? weatherData.weather[0].description : ""}</p>
+              ) : (
+                <p className='rainy-weather'>{weatherData && weatherData.weather && weatherData.weather[0] ? weatherData.weather[0].description : ""}</p>
+              )}
+            </div>
+             {/* <p className='description'>
               {weatherData && weatherData.weather && weatherData.weather[0] ? weatherData.weather[0].description : ""}
-            </p>
+            </p> */}
             <div className='weather-info'>
               <div className='column'>
                 <div>
@@ -87,4 +106,3 @@ export default function Weather() {
    en: Language code for English.
    us: Region code for the United States.
     */
-

@@ -1,84 +1,80 @@
-body{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
-}
-.search-engine
-{
+  }
+  
+  .search-engine {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
-    margin-bottom:30px;
-   
-}
-.search-engine input
-{
+    margin-bottom: 30px;
+  }
+  
+  .search-engine input {
     width: 70%;
     height: 45px;
     border: 1px solid;
     border-radius: 8px;
     padding: 2px 15px;
-    font-size:16px;
+    font-size: 16px;
     outline: none;
     background-color: #fff;
     color: #555555;
-
-}
-
-.search-engine button
-{
-      cursor: pointer;
-      background-color: black;
-      border-radius: 8px;
-      padding: 13px 15px;
-      border: none;
-      color: white;
-      outline: none;
-      font-size: 20px;
-}
-.App
-{
+  }
+  
+  .search-engine button {
+    cursor: pointer;
+    background-color: black;
+    border-radius: 8px;
+    padding: 13px 15px;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 20px;
+  }
+  
+  .App {
     text-align: center;
     border-radius: 20px;
-    width: 90%;
-    max-width: 700px;
-    background: rgb(0,255,166);
+    width: 100%;
+    max-width: 650px;
     padding: 20px 15px;
-    height: 500px;
+    height: 600px;
     margin: 50px auto 0px;
-}
-.city-name
-{
+  }
+  
+  .city-name {
     margin-bottom: 10px;
-}
-.loading{
+  }
+  
+  .loading {
     font-size: 60px;
-}
-.date
-{
-    font-size: 18px;
+  }
+  
+  .date {
+    font-size: 20px;
     font-style: italic;
     font-weight: 500;
-}
-.temp
-{
+  }
+  
+  .temp {
     font-size: 64px;
     text-align: center;
     font-weight: bold;
     color: black;
-}
-.description
-{
-      color: black;
-      font-size: 22px;
-      font-weight: 500;
-      margin-top: 0px;
-      margin-bottom: 20px;
-    
-}
-.weather-info
-{
+  }
+  
+  .description {
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -87,21 +83,85 @@ body{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
-   
-}
-.column
-{
+  }
+  
+  .column {
     display: flex;
     align-items: center;
     line-height: 1px;
-     display: flex;
-    flex-direction: column; /* Stack items vertically */
-}
-.sunny-background
-{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sunny-background {
     background-color: yellow;
-}
-.weather-condition
-{
+  }
+  
+  .weather-condition {
     font-weight: bold;
-}
+  }
+  
+  .light-rain {
+    background-image: url(https://wallpapercave.com/wp/wp5249589.jpg);
+  }
+  
+  .few-clouds {
+    background-image: url('https://c0.wallpaperflare.com/preview/532/447/657/scattered-white-clouds.jpg');
+  }
+  
+  .scattered-clouds {
+    background-image: url('https://assets.ldscdn.org/dc/4a/dc4ad1816ca6002d21a7e239e34e6c32d8b18def/clouds.jpeg');
+  }
+  
+  .broken-clouds {
+    background-image:url('https://thumbs.dreamstime.com/b/broken-cloud-cover-blue-sky-background-246381793.jpg');
+  }
+  
+  .shower-rain {
+    background-color: #4682b4;
+  }
+  
+  .clear-sky {
+    background-image: url(https://i0.wp.com/biblebase.com/wp-content/uploads/2019/05/AdobeStock_71277954.jpeg?fit=4447%2C1706&ssl=1);
+  }
+  
+  .thunderstorm {
+    background-color: #808080;
+  }
+  
+  .haze {
+    background-image: url(https://dailypost.ng/wp-content/uploads/2021/03/hazy-weather.jpg);
+  }
+  
+  .mist {
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.9GfnJ1vxsdQ81t66zrJlGQHaE6&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center;
+  }
+  .overcast-clouds
+  {
+    background-image: url('https://thumbs.dreamstime.com/b/beautiful-sky-white-cloud-copy-space-cloudscape-clear-overcast-90793183.jpg');
+
+  }
+  .heavy-intenity-rain
+  {
+    background-image:url('https://s7d2.scene7.com/is/image/TWCNews/heavy_rain_jpg-2');
+  }
+  .smoke
+  {
+    background-image: url('https://mediad.publicbroadcasting.net/p/wpr/files/styles/x_large/public/202012/smoke.jpg');
+  }
+  .moderate-rain
+  {
+    background-image: url('https://old.risingnepaldaily.com/banner_image/5f36279ada9cf_barsa-1.jpg');
+    
+  }
+  .light-intensity-drizzle
+  {
+    background-image: url('https://ak7.picdn.net/shutterstock/videos/8937877/thumb/1.jpg?i10c=img.resize(height:160)');
+  }
+  .thunderstorm-with-light-rain
+  {
+    background-image:url('https://thumbs.dreamstime.com/b/thunderstorm-cloud-lightning-heavy-rain-dramatic-bolt-strike-dark-clouds-158362648.jpg');
+  }
+  
